@@ -1043,6 +1043,48 @@ export const GENERATED_BUNDLED_PLUGIN_METADATA = [
     },
   },
   {
+    dirName: "fpt-ai-factory",
+    idHint: "fpt-ai-factory",
+    source: {
+      source: "./index.ts",
+      built: "index.js",
+    },
+    packageName: "@openclaw/fpt-ai-factory-provider",
+    packageVersion: "2026.3.24",
+    packageDescription: "OpenClaw FPT AI Factory provider plugin",
+    packageManifest: {
+      extensions: ["./index.ts"],
+    },
+    manifest: {
+      id: "fpt-ai-factory",
+      configSchema: {
+        type: "object",
+        additionalProperties: false,
+        properties: {},
+      },
+      providers: ["fpt-ai-factory"],
+      providerAuthEnvVars: {
+        "fpt-ai-factory": ["FPT_AI_FACTORY_API_KEY"],
+      },
+      providerAuthChoices: [
+        {
+          provider: "fpt-ai-factory",
+          method: "api-key",
+          choiceId: "fpt-ai-factory-api-key",
+          choiceLabel: "FPT AI Factory API key",
+          choiceHint: "OpenAI-compatible API key",
+          groupId: "fpt-ai-factory",
+          groupLabel: "FPT AI Factory",
+          groupHint: "API key",
+          optionKey: "fptAiFactoryApiKey",
+          cliFlag: "--fpt-ai-factory-api-key",
+          cliOption: "--fpt-ai-factory-api-key <key>",
+          cliDescription: "FPT AI Factory API key",
+        },
+      ],
+    },
+  },
+  {
     dirName: "github-copilot",
     idHint: "github-copilot",
     source: {
